@@ -25,23 +25,23 @@ import model.Employee;
   
         
 	    private static void testFindByEmployee() {
-	    	String name = "Subash";
+	    	String name = "Goutham";
 	        Employee e = EmployeeDAO.findByName(name);
 		    System.out.println("Employee" + e.id +"-"+ e.name);
 		}
 
 		private static void testInsert() {
-	        String name = "Vanathi";
+	        String name = "Naresh";
 	        EmployeeDAO.insert(name);
 	    }
 	 
 	    private static void testUpdate() {
-		        String name = "Sharon Priya";
-				int id = 7;
+		        String name = "Dr. Anbarasu";
+				int id = 5;
 				EmployeeDAO.update(id, name);
 		    }
 	    private static void testDelete() {
-		        int id = 2;
+		        int id = 9;
 				EmployeeDAO.delete(id);
 		    }
 	}
